@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Sarah Sahl — Content Strategist & Social Media</title>
+  <meta name="description" content="Portfolio of Sarah Sahl. Content strategist and social media lead who drives measurable growth. Reels engines, B2B funnels, and clean UX." />
+  <link rel="canonical" href="https://www.thepennylaneproject.org/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sarah Sahl — Content Strategist & Social Media" />
+  <meta property="og:description" content="Portfolio of Sarah Sahl. Content strategist and social media lead who drives measurable growth." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.thepennylaneproject.org/" />
+  <meta property="og:image" content="https://www.thepennylaneproject.org/assets/img/og-image.jpg" />
+  <meta property="og:site_name" content="The Penny Lane Project" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sarah Sahl — Content Strategist & Social Media" />
+  <meta name="twitter:description" content="Portfolio of Sarah Sahl. Content strategist and social media lead who drives measurable growth." />
+  <meta name="twitter:image" content="https://www.thepennylaneproject.org/assets/img/og-image.jpg" />
+
+  <meta name="robots" content="index,follow" />
+
+  <!-- Tailwind v4 Browser CDN (zero-build). Note: Play CDN is not intended for production per Tailwind docs. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Tailwind v4 tokens via @theme. Class names derive from the token name. -->
+  <style type="text/tailwindcss">
+    @theme {
+      --color-ink: #000000;       /* brand black */
+      --color-gold: #D2AF71;      /* brand gold */
+      --color-sand: #E1C99F;      /* light gold */
+      --color-charcoal: #302F2E;  /* near black */
+      --color-stone: #605F5C;     /* gray */
+    }
+    /* Minimal non-TW CSS for skip link visibility */
+    .skip-link {
+      position: absolute; left: 0; top: 0; transform: translateY(-200%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-white text-charcoal font-sans">
+  <a href="#main" class="skip-link bg-gold text-ink px-3 py-2 font-medium">Skip to main content</a>
+
+  <header class="border-b border-stone/30">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+        <img src="assets/img/logo.svg" width="32" height="32" alt="The Penny Lane Project logo" />
+        <span class="text-xl font-semibold tracking-tight text-ink">Sarah Sahl</span>
+      </a>
+
+      <button id="navToggle" class="md:hidden p-3 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle menu</span>
+        <!-- simple icon -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav id="siteNav" class="hidden md:block">
+        <ul class="md:flex md:items-center md:gap-6">
+          <li><a class="block py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" href="work.html">Work</a></li>
+          <li><a class="block py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" href="videos.html">Videos</a></li>
+          <li><a class="block py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" href="about.html">About</a></li>
+          <li><a class="block py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="mx-auto max-w-6xl px-4 py-12">
+    <section class="grid md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-5">
+        <img class="rounded-xl ring-1 ring-stone/20" src="assets/img/sarah.jpg" width="960" height="1200" alt="Portrait of Sarah Sahl with pink hair and black attire" />
+      </div>
+      <div class="md:col-span-7">
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-ink">Content that moves people and the numbers</h1>
+        <p class="mt-4 text-lg leading-relaxed text-stone">
+          I build video-first content engines, clean funnels, and honest brand voice. At Aveda Institute Des Moines I grew Instagram reach 218 percent while coaching 90 plus student creators. At HealthTech Associates I pushed reach 241 percent and built a CRM for 1,390 plus facilities. Facts, not fluff.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="work.html" class="inline-flex items-center rounded-lg bg-ink text-white px-5 py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">See case studies</a>
+          <a href="assets/Sarah-Sahl-Resume.pdf" class="inline-flex items-center rounded-lg border border-stone/40 px-5 py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">Download resume</a>
+        </div>
+        <ul class="mt-6 text-sm text-stone/90 list-disc pl-5">
+          <li>Content strategy, social media, short-form video, CRM pipelines</li>
+          <li>Platforms: Instagram, TikTok, Meta Suite, LinkedIn, GA4, Monday</li>
+          <li>Values: women-forward, clear UX, measurable outcomes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <h2 class="text-2xl font-semibold text-ink">Featured work</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Editable tile -->
+        <a href="work.html#aveda-reels" class="group block rounded-xl border border-stone/20 p-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+          <h3 class="font-semibold text-ink">Beauty Education Reels Engine</h3>
+          <p class="mt-1 text-stone">31 reels in 90 days. Reach up. Admissions pipeline warmer.</p>
+          <span class="mt-3 inline-block text-sm text-gold group-hover:underline">Open case study</span>
+        </a>
+        <a href="work.html#med-manager" class="group block rounded-xl border border-stone/20 p-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+          <h3 class="font-semibold text-ink">Med Manager Campaign + CRM</h3>
+          <p class="mt-1 text-stone">Built Monday CRM for 1,390 plus facilities. Content that converts.</p>
+          <span class="mt-3 inline-block text-sm text-gold group-hover:underline">Open case study</span>
+        </a>
+        <a href="work.html#pci-multichannel" class="group block rounded-xl border border-stone/20 p-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+          <h3 class="font-semibold text-ink">PCI Multi-channel Engine</h3>
+          <p class="mt-1 text-stone">Email, events, video, and UGC working in sync.</p>
+          <span class="mt-3 inline-block text-sm text-gold group-hover:underline">Open case study</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-16 border-t border-stone/20">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-stone">
+      <p>&copy; <span id="year"></span> The Penny Lane Project. Built with a zero-build stack.</p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD: WebSite (homepage only, for site name) and Person -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "url":"https://www.thepennylaneproject.org/",
+        "name":"The Penny Lane Project",
+        "alternateName":"Sarah Sahl",
+        "inLanguage":"en"
+      },
+      {
+        "@type":"Person",
+        "name":"Sarah Sahl",
+        "url":"https://www.thepennylaneproject.org/",
+        "image":"https://www.thepennylaneproject.org/assets/img/sarah.jpg",
+        "jobTitle":"Content Strategist and Social Media Manager",
+        "sameAs":[
+          "https://www.linkedin.com/in/sarah-sahl"
+        ],
+        "email":"mailto:misssahl@outlook.com"
+      }
+    ]
+  }
+  </script>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

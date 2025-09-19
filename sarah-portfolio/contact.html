@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact — Sarah Sahl</title>
+  <meta name="description" content="Contact Sarah Sahl for content strategy, social media, and video projects."/>
+  <link rel="canonical" href="https://www.thepennylaneproject.org/contact.html"/>
+  <meta property="og:title" content="Contact — Sarah Sahl"/>
+  <meta property="og:description" content="Book a chat or send a note."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.thepennylaneproject.org/contact.html"/>
+  <meta property="og:image" content="https://www.thepennylaneproject.org/assets/img/og-image.jpg"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme { --color-ink:#000; --color-gold:#D2AF71; --color-sand:#E1C99F; --color-charcoal:#302F2E; --color-stone:#605F5C; }
+  </style>
+</head>
+<body class="bg-white text-charcoal font-sans">
+  <a href="#main" class="skip-link bg-gold text-ink px-3 py-2 font-medium">Skip to main content</a>
+  <header class="border-b border-stone/30">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+        <img src="assets/img/logo.svg" width="32" height="32" alt="The Penny Lane Project logo" />
+        <span class="text-xl font-semibold tracking-tight text-ink">Sarah Sahl</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="flex items-center gap-6">
+          <li><a class="py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" href="work.html">Work</a></li>
+          <li><a class="py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" href="videos.html">Videos</a></li>
+          <li><a class="py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" href="about.html">About</a></li>
+          <li><a aria-current="page" class="py-2 font-medium text-ink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-3xl font-semibold text-ink">Contact</h1>
+    <p class="mt-2 text-stone">Use the form or email <a class="underline" href="mailto:misssahl@outlook.com">misssahl@outlook.com</a>.</p>
+
+    <!-- Netlify form: add name, data-netlify, hidden form-name, and honeypot -->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="mt-6 space-y-4 max-w-xl">
+      <!-- Netlify required hidden input -->
+      <input type="hidden" name="form-name" value="contact" />
+      <!-- Honeypot -->
+      <p class="hidden">
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+
+      <!-- Editable region: update placeholders and help text as needed -->
+      <div>
+        <label for="name" class="block text-sm font-medium text-ink">Name</label>
+        <input id="name" name="name" required class="mt-1 block w-full rounded border border-stone/40 px-3 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" />
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-ink">Email</label>
+        <input id="email" type="email" name="email" required class="mt-1 block w-full rounded border border-stone/40 px-3 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold" />
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-ink">Message</label>
+        <textarea id="message" name="message" rows="6" required class="mt-1 block w-full rounded border border-stone/40 px-3 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"></textarea>
+      </div>
+
+      <button type="submit" class="rounded bg-ink text-white px-5 py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">Send</button>
+    </form>
+    <!-- End Netlify form -->
+  </main>
+
+  <footer class="mt-16 border-t border-stone/20">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-stone">
+      <p>&copy; <span id="year"></span> The Penny Lane Project.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
